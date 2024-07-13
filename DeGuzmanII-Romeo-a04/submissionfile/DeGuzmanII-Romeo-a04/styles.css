@@ -1,0 +1,645 @@
+/* TABLE OF CONTENTS
+
+
+18-Google Fonts
+25-Reset
+161-Font Family
+244-Body Style
+259-leftColumn/SideBar 
+346-rightColumn/Main Content
+386-individual section background 
+483-headline text and alignment properties
+551-section text properties/subtext
+629-Collapse on mobile
+
+ */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Bilbo&family=Hind+Guntur:wght@300;400;500;600;700&family=Niconne&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oxygen:wght@300;400;700&family=Teko:wght@300..700&family=Tienne:wght@400;700;900&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* reset done */
+
+
+
+/* Font styles */
+.arimo400 {
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.arimo500 {
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.arimo600 {
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.arimo700 {
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.oxygen-light {
+    font-family: "Oxygen", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.oxygen-regular {
+    font-family: "Oxygen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.oxygen-bold {
+    font-family: "Oxygen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.averia-serif libre-light {
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.averia-serif libre-regular {
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.averia-serif libre-bold {
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.averia-serif libre-light-italic {
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.averia-serif libre-regular-italic {
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.averia-serif libre-bold-italic {
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Body Styles/My Styles */
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    color: #F3F3F3;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+/* leftColumn */
+.sidebar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    width: 23.8em;
+    height: 100%;
+    box-sizing: border-box;
+
+    background-color: #0D0D0D;
+    color: #F3F3F3;
+}
+
+#css-zen-garden>div.page-wrapper>aside>div {
+    width: 85%;
+}
+
+/* Select a Design */
+.design-selection {
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 300;
+    font-style: normal;
+
+    text-align: left;
+    line-height: 2em;
+    border: 1px solid #F3F3F3;
+    padding: 20px;
+    margin: 0 0 20px 0;
+    box-sizing: border-box;
+
+    border-style: dashed;
+}
+
+/* Archieves */
+.design-archives {
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    text-align: left;
+    line-height: 2em;
+    border: 1px solid #F3F3F3;
+    padding: 20px;
+    margin: 0 0 20px 0;
+    box-sizing: border-box;
+
+    border-style: dashed;
+}
+
+/* Resources */
+.zen-resources {
+    font-family: "Averia Serif Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    text-align: left;
+    line-height: 2em;
+    border: 1px solid #F3F3F3;
+    padding: 20px;
+    box-sizing: border-box;
+
+    border-style: dashed;
+}
+
+#design-selection>h3,
+#design-archives>h3,
+#zen-resources>h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#design-selection>nav,
+#design-archives>nav,
+#zen-resources>ul {
+    font-family: "Oxygen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    opacity: 0.9;
+}
+
+/* rightColumn */
+#zen-supporting,
+#zen-intro {
+    padding: 0 0 0 23.8em;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* whole page scroll enabler */
+.page-wrapper {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+}
+
+/* setting each section to occupy the screen */
+header,
+/*section 1 */
+.summary,
+/*section 2 */
+.preamble,
+/*section 3 */
+.explanation,
+/*section 4 */
+.participation,
+/*section 5 */
+.benefits,
+/*section 6 */
+.requirements,
+/*section 7 */
+footer {
+    /*section 8 */
+    font-size: 1em;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+/* individual section background */
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/1048033/pexels-photo-1048033.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    background-attachment: fixed;
+
+    text-align: center;
+}
+
+.summary {
+    /* background-color: #252b33; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/5800553/pexels-photo-5800553.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    background-attachment: fixed;
+}
+
+.preamble {
+    /* background-color: #2c3035; */
+    /* background-color: #252b33; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/2132227/pexels-photo-2132227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    background-attachment: fixed;
+}
+
+.explanation {
+    /* background-color: #343537; */
+    /* background-color: #2c3035; */
+    /* background-color: #252b33; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/6184533/pexels-photo-6184533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    background-attachment: fixed;
+}
+
+.participation {
+    /* background-color: #3e3937; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/1408221/pexels-photo-1408221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    background-attachment: fixed;
+}
+
+.benefits {
+    /* background-color: #463f39; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/196664/pexels-photo-196664.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    background-attachment: fixed;
+}
+
+.requirements {
+    /* background-color: #55483c; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/1442398/pexels-photo-1442398.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    background-attachment: fixed;
+}
+
+footer {
+    background-color: #0D0D0D;
+}
+
+/* end individual colors */
+
+
+
+/* headline text and alignment properties */
+header {
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 4em;
+    line-height: 1em;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.summary,
+.preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements,
+footer {
+    font-family: "Hind Guntur", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 1.5em;
+
+    padding: 0 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.requirements {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+footer {
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    text-align: center;
+}
+
+footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #F3F3F3;
+
+    border: dashed;
+    box-sizing: border-box;
+
+    width: 200px;
+    height: 200px;
+}
+
+/* end headline text and alignment properties */
+
+/* section text properties */
+.summary p:nth-child(2) {
+    padding: 10px 0 0 0;
+    font-size: .6em;
+}
+
+.preamble h3 {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.preamble p {
+    padding: 10px 0 0 0;
+    font-size: .6em;
+    line-height: 1.8em;
+}
+
+.explanation h3 {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.explanation p {
+    padding: 10px 0 0 0;
+    font-size: .6em;
+    line-height: 1.8em;
+}
+
+.participation h3 {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.participation p {
+    padding: 10px 0 0 0;
+    font-size: .6em;
+    line-height: 1.8em;
+}
+
+.benefits h3 {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.benefits p {
+    padding: 10px 0 0 0;
+    font-size: .6em;
+    line-height: 1.8em;
+}
+
+.requirements h3 {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.requirements p {
+    padding: 10px 0 0 0;
+    font-size: .6em;
+    line-height: 1.8em;
+}
+
+/* end section text properties */
+
+/* Collapse */
+@media (max-width:1087px) {
+    .sidebar {
+        display: none;
+    }
+
+    #zen-supporting,
+    #zen-intro {
+        padding: 0 0 0 0;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: 300px 0 100px 0;
+    }
+
+}
