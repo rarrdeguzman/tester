@@ -1101,11 +1101,22 @@ svg {
     font-weight: bold;
 }
 
+.hideOnMed {
+    display: block;
+}
 
+.showOnMed {
+    display: none;
+}
+
+
+/*hide all*/
 .oldcode,
 .nav-main-container,
+/*.slide2_overlapText_container,*/
 /*.slide1_photoObject_container,*/
-.slide2,
+/*.slide1,
+.slide2,*/
 .slide3,
 .slide4,
 .slide5,
@@ -1122,6 +1133,78 @@ svg {
     padding:0;
     margin: 0;
     z-index:11;
+}
+
+@media only screen and (max-width: 1372px) {
+/*    for slide 2*/
+    .flex_container .slide2{
+        margin: 0 auto !important;
+        flex-wrap: wrap;
+        justify-content: center !important;
+        padding: 40px 40x 0px 40px !important;
+        column-gap: 0px !important;
+        gap: 0 !important;
+    }
+
+    .slide2_leftCol {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+
+    .slide2_banner {
+        width: 100% !important;
+    }
+
+    .slide2_h2 h2 {
+        width: 100% !important;
+    }
+
+
+    .slide2_p.showOnMed {
+        padding-top: 0 !important;
+    }
+
+    .slide2_p.showOnMed p {
+        width: 100%;
+    }
+
+    .hideOnMed {
+        display: none;
+    }
+
+    .showOnMed {
+        display: block;
+    }
+
+    .slide2_overlapText_Med.showOnMed{
+        padding: 20px !important;
+        background-color: #006341 !important;
+        position:  absolute;
+        bottom: 0;
+
+
+    }
+
+    .slide2_overlapText_Med h2{
+        font-family: 'Raleway';
+        src: url('font/Raleway-Bold.woff2') format('woff2'),
+            url('font/Raleway-Bold.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+        font-size: 1em;
+        line-height: 1em;
+        color: #FFFFFF;
+
+    }
+
+    .slide2_p p {
+        margin: 10px 0 0 0 !important;
+    }
+
+
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -1183,6 +1266,29 @@ svg {
   }
 
 
+.flex_container .slide2 {
+    padding: 40px 20px 0 20px !important;
+    justify-content: flex-start !important;
+}
+
+
+
+  .slide2{
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 !important;
+    width: 100% !important;
+  }
+
+  .slide2_banner {
+    width: 100%;
+  }
+
+  .slide2_leftCol {
+    padding: 0 !important;
+    width: 100%;
+  }
 
 
 
