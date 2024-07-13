@@ -3,7 +3,9 @@
     --MainHeading: "Bebas Neue", sans-serif , 28px,  400, normal;
 }
 
-
+.flex_container {
+    -webkit-overflow-scrolling: touch !important;
+}
 
 
 
