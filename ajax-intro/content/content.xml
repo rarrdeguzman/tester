@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pages>
+  <page>
+    <title>Page 1</title>
+    <bodytext>This is the body text of page 1</bodytext>
+    <url>https://via.placeholder.com/400</url>
+  </page>
+  <page>
+    <title>Page 2</title>
+    <bodytext>This is the body text of page 2</bodytext>
+    <url>https://via.placeholder.com/400</url>
+  </page>
+  <page>
+    <title>Page 3</title>
+    <bodytext>This is the body text of page 3</bodytext>
+    <url>https://via.placeholder.com/400</url>
+  </page>
+</pages>
