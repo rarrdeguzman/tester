@@ -22,42 +22,37 @@ for (let i = 0; i < controls.length; i++) {
 function detectButton(ev) {
     let currentButton = ev.target.textContent;
     
-    if (currentButton === controls[0].innerHTML) {
        fetch(url)
        	.then((response) => response.json())
        	.then((data) => {
        		// console.log(data);
 
+       	if (currentButton === controls[0].innerHTML) {
        		dc.innerHTML = `
        		  <h2>${data.p1.title}</h2>
        		  <p>${data.p1.bodyText}</p>
        		`;
-       	});
-    } else if (currentButton === controls[1].innerHTML) {
-    	fetch(url)
-    		.then((response) => response.json())
-    		.then((data) => {
-    			// console.log(data);
+       	}
 
-    			dc.innerHTML = `
-    			  <h2>${data.p2.title}</h2>
-    			  <p>${data.p2.bodyText}</p>
-    			`;
-    		});
-       console.log(asd);
-    } else {
-    	fetch(url)
-    		.then((response) => response.json())
-    		.then((data) => {
-    			// console.log(data);
+       	else if (currentButton === controls[1].innerHTML) {
+       		dc.innerHTML = `
+       		  <h2>${data.p2.title}</h2>
+       		  <p>${data.p2.bodyText}</p>
+       		`;
+       	}
 
-    			dc.innerHTML = `
-    			  <h2>${data.p3.title}</h2>
-    			  <p>${data.p3.bodyText}</p>
-    			`;
-    		});
-    }
+       	else {
+       		dc.innerHTML = `
+       		  <h2>${data.p3.title}</h2>
+       		  <p>${data.p3.bodyText}</p>
+       		`;
+       	}
+})
 }
+
+
+
+
 
 
 
