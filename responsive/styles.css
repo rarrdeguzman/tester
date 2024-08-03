@@ -550,8 +550,7 @@ svg {
 
 
 #sticky_nav {
-	position: absolute;
-	left: 0;
+	position: fixed;
 	top: 0;
 	z-index: 999;
 

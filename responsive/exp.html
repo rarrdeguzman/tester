@@ -566,9 +566,34 @@
 
 
 <script>
-	function myFunction() {
+
+	var scrollableElement = document.body; //document.getElementById('scrollableElement');
+
+	scrollableElement.addEventListener('wheel', checkScrollDirection);
+
+	function checkScrollDirection(event) {
+	  if (checkScrollDirectionIsUp(event)) {
+	    console.log('UP');
+	  document.getElementById("sticky_nav").style.display = "flex";
+
+	  } else {
+	    console.log('Down');
 	  document.getElementById("sticky_nav").style.display = "none";
+
+	  }
 	}
+
+	function checkScrollDirectionIsUp(event) {
+	  if (event.wheelDelta) {
+	    return event.wheelDelta > 0;
+	  }
+	  return event.deltaY < 0;
+	}
+
+
+	// function myFunction() {
+	//   document.getElementById("sticky_nav").style.display = "none";
+	// }
 
 function modalToggle() {
   var infoIcon = document.getElementById("infoIcon");
