@@ -13,7 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="faculty.css">
 	<link rel="stylesheet" type="text/css" href="footer.css">
 </head>
-<body onscroll="myFunction()">
+<body id="body" onscroll="myFunction()">
 
 	<div id="sticky_nav">
 		<img id="exp" src="img/nav-background-rotated.png" alt="Navigation Background, A half cut of Camera Lens">
@@ -567,29 +567,22 @@
 
 <script>
 
-	var scrollableElement = document.body; //document.getElementById('scrollableElement');
+  var oldScrollY = window.scrollY;
+  var directionText = document.getElementById('body');
 
-	scrollableElement.addEventListener('wheel', checkScrollDirection);
-
-	function checkScrollDirection(event) {
-	  if (checkScrollDirectionIsUp(event)) {
-	    console.log('UP');
-	  document.getElementById("sticky_nav").style.display = "flex";
-
-	  } else {
-	    console.log('Down');
-	  document.getElementById("sticky_nav").style.display = "none";
-
-	  }
-	}
-
-	function checkScrollDirectionIsUp(event) {
-	  if (event.wheelDelta) {
-	    return event.wheelDelta > 0;
-	  }
-	  return event.deltaY < 0;
-	}
-
+  var sticky_nav = document.getElementById('sticky_nav');
+  window.onscroll = function(e) {
+    if(oldScrollY < window.scrollY){
+        // directionText.textContent = " Down";
+        sticky_nav.style.display = "none";
+        console.log("down");
+    } else {
+        // directionText.textContent = " Up";
+        sticky_nav.style.display = "flex";
+        console.log("up");
+    }
+    oldScrollY = window.scrollY;
+  }
 
 
 function modalToggle() {
