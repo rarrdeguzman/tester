@@ -14,34 +14,59 @@ function defaultValue() {
 
 function detectButton(ev) {
     let currentButton = ev.target.textContent;
-    
-       fetch(url)
-       	.then((response) => response.json())
-       	.then((data) => {
+
+    fetch(url)
+        .then((response) => response.json())
+        .then((data) => {
+
+        let jsondata = Object.keys(data);
+        let jsonValues = Object.values(data);
+        let outputContainer = [];
+        let collectOutput;
 
        	if (currentButton === controls[0].innerHTML) {
-       		dc.innerHTML = `
-       		  <h2>${data.p1.title}</h2>
-       		  <p>${data.p1.bodyText}</p>
-       		`;
-       	}
 
-       	else if (currentButton === controls[1].innerHTML) {
-       		dc.innerHTML = `
-       		  <h2>${data.p2.title}</h2>
-       		  <p>${data.p2.bodyText}</p>
-       		`;
+            for (let i = 0; i < jsondata.length; i++) {
+                console.log(jsondata.length);
+                // console.log(jsondata[i]);
+
+                collectOutput = `
+                  <p>${jsonValues[i].title}</p>
+                  <p>${jsonValues[i].bodyText}</p>
+                  <img src="${jsonValues[i].url}">
+                `;
+
+                outputContainer.push(collectOutput);
+
+                // cancell loop once portfolio data reached
+                if (i == 3) {
+                    break;
+                }
+            }
+
+            dc.innerHTML = outputContainer;
        	}
 
        	else {
-       		dc.innerHTML = `
-       		  <h2>${data.p3.title}</h2>
-       		  <p>${data.p3.bodyText}</p>
-       		`;
-       	}
-	})
-}
+            for (let i = 4; i < jsondata.length; i++) {
+                // console.log(jsondata.length);
+                // console.log(jsondata[i]);
 
+                collectOutput = `
+                  <p>${jsonValues[i].title}</p>
+                  <p>${jsonValues[i].bodyText}</p>
+                  <img src="${jsonValues[i].url}">
+                `;
+
+                outputContainer.push(collectOutput);
+            }
+
+            dc.innerHTML = outputContainer;
+       	}
+
+    })
+
+}
 
 
 

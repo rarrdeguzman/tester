@@ -539,6 +539,11 @@
 	},
 	"file_history":
 	[
+		"/Users/romeodeguzmanii/Documents/Mirror/IMM/1526-JS/LoadedContentbyAjax/index.html",
+		"/Users/romeodeguzmanii/Documents/Mirror/IMM/1526-JS/LoadedContentbyAjax/main.js",
+		"/Users/romeodeguzmanii/Documents/Mirror/IMM/1526-JS/LoadedContentbyAjax/content.json",
+		"/Users/romeodeguzmanii/Downloads/ajax-intro/index.html",
+		"/Users/romeodeguzmanii/Downloads/ajax-intro/js/index.js",
 		"/Users/romeodeguzmanii/Documents/Mirror/responsive/js/nav.js",
 		"/Users/romeodeguzmanii/Documents/Mirror/responsive/index.html",
 		"/Users/romeodeguzmanii/Documents/Mirror/responsive/js/navigation.js",
@@ -661,16 +666,11 @@
 		"/Users/romeodeguzmanii/Documents/IMM/1526-ClientSide/week4JS/sample2/index.html",
 		"/Applications/MAMP/htdocs/1531/introToForm/contact.php",
 		"/Applications/MAMP/htdocs/1531/introToForm/styles.css",
-		"/Applications/MAMP/htdocs/1531/introToForm/index.php",
-		"/Users/romeodeguzmanii/Desktop/week4JS/sample2/index.html",
-		"/Users/romeodeguzmanii/Desktop/week4JS/sample2/javascript.js",
-		"/Applications/MAMP/htdocs/1531/week4/index.php",
-		"/Applications/MAMP/htdocs/1531/week4/index.html",
-		"/Applications/MAMP/htdocs/1531/week4/javascript.js"
+		"/Applications/MAMP/htdocs/1531/introToForm/index.php"
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 24.0
 	},
 	"find_in_files":
 	{
@@ -926,7 +926,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},

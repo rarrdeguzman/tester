@@ -1,17 +1,63 @@
 {
-  "p1": {
-      "title": "Page 1s",
+  "Home": {
+      "title": "Home",
       "bodyText": "This is the body text of page 1",
       "url": "https://via.placeholder.com/400"
   },
-  "p2": {
-      "title": "Page 2a",
-      "bodyText": "This is the body text of page 2",
+
+  "article1": {
+    "title": "Article 1",
+    "bodyText": "article here1",
+    "url": "https://placehold.co/300x300"
+  },
+
+  "article2": {
+    "title": "Article 2",
+    "bodyText": "article here2",
+    "url": "https://placehold.co/300x300"
+  },
+
+  "articl3": {
+    "title": "Article 3",
+    "bodyText": "article here3",
+    "url": "https://placehold.co/300x300"
+  },
+
+  "Portfolio": {
+      "title": "Portfolio",
+      "bodyText": "This is the body text of page 1",
       "url": "https://via.placeholder.com/400"
   },
-  "p3": {
-      "title": "Page 3b",
-      "bodyText": "This is the body text of page 3",
-      "url": "https://via.placeholder.com/400"
+
+  "portfolio1": {
+    "title": "portfolio 1",
+    "bodyText": "portfolio here1 desc",
+    "url": "https://placehold.co/300x300"
+  },
+
+  "portfolio2": {
+    "title": "portfolio 2",
+    "bodyText": "portfolio here2 desc",
+    "url": "https://placehold.co/300x300"
+  },
+
+  "portfolio4": {
+    "title": "portfolio 4",
+    "bodyText": "portfolio here4 desc",
+    "url": "https://placehold.co/300x300"
+  },
+
+  "portfolio5": {
+    "title": "portfolio 5",
+    "bodyText": "portfolio here5 desc",
+    "url": "https://placehold.co/300x300"
+  },
+
+  "portfolio6": {
+    "title": "portfolio 6",
+    "bodyText": "portfolio here6 desc",
+    "url": "https://placehold.co/300x300"
   }
+
+
 }
